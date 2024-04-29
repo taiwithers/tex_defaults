@@ -1,0 +1,39 @@
+\usepackage{enumitem}
+\setlist{nosep}
+\setlist[1]{leftmargin=2\parindent} % set level 1 list indentation
+
+\usepackage{caption, subcaption}
+\usepackage{bookmark}
+\usepackage{siunitx, amsmath, amssymb, amsfonts, derivative}
+
+\usepackage[none]{hyphenat} % do not hyphenate
+
+% set up hyperref
+\definecolor{linkclr}{cmyk}{1,1,0,0}
+\usepackage[colorlinks=true,linkcolor=linkclr,citecolor=linkclr,
+filecolor=linkclr,urlcolor=linkclr]{hyperref}
+
+% set custom listing format
+\usepackage{listings}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    basicstyle=\ttfamily,
+    breakatwhitespace=false,
+    breakautoindent=true,
+    breaklines=true,,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+}
+
+\lstset{style=mystyle}
+
+\newcommand{\red}[1]{{\color{red}#1}}
+
+% Reminder that aastex uses natbib, which provides \citet and \citep
